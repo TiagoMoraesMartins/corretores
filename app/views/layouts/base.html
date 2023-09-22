@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Basic Page Needs
+================================================== -->
+    <meta charset="utf-8">
+    <title>Cristina Santos Imóveis - {{% block subtitle %}} {{% endblock %}}</title>
+
+    <!-- Mobile Specific Metas
+================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Cristina Santos Imóveis. Corretora imobiliária em Arraial d'Ajuda, Porto Seguro e Trancoso. Casas e Apartamentos para alugar e vender.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="geo.region" content="BR-BA" />
+    <meta name="geo.placename" content="Porto Seguro" />
+    <meta name="geo.position" content="-16.491152;-39.073305" />
+    <meta name="ICBM" content="-16.491152, -39.073305" />
+
+    <!-- Favicon
+================================================== -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='images/favicon.ico')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+    <!-- Preload -->
+    <link rel="preload" href="{{url_for('static', filename='plugins/bootstrap/bootstrap.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='plugins/fontawesome/css/all.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='plugins/fontawesome/webfonts/fa-brands-400.woff2')}}"
+        as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{url_for('static', filename='plugins/fontawesome/webfonts/fa-solid-900.woff2')}}"
+        as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{url_for('static', filename='plugins/animate-css/animate.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='plugins/slick/slick.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='plugins/slick/slick-theme.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='plugins/colorbox/colorbox.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{url_for('static', filename='css/style.min.css')}}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="{{url_for('static', filename='plugins/jQuery/jquery.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='plugins/bootstrap/bootstrap.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='plugins/slick/slick.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='plugins/slick/slick-animation.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='plugins/colorbox/jquery.colorbox.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='plugins/shuffle/shuffle.min.js')}}" as="script">
+    <link rel="preload" href="{{url_for('static', filename='js/script.min.js')}}" as="script">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/bootstrap/bootstrap.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/fontawesome/css/all.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/animate-css/animate.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/slick/slick.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/slick/slick-theme.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='plugins/colorbox/colorbox.min.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.min.css')}}" media="screen">
+
+
+    <!-- Bootstrap
+================================================== -->
+</head>
+
+<body>
+    <div class="body-inner">
+
+        <header id="header" class="header-one">
+
+            <div style="background-color: black;">
+                <style>
+                    .btn-whatsapp {
+                        background-color: #27a644;
+                        color: white;
+                        font-size: 18pt;
+                    }
+
+                    .btn-whatsapp:hover {
+                        background-color: #27a644;
+                        color: black;
+                    }
+
+                    ul.navbar-nav>li>a:hover {
+                        color: black !important
+                    }
+                </style>
+                <div class="container">
+                    <div class="logo-area">
+                        <div class="row align-items-center">
+                            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                                <a class="d-block" href="{{url_for('index')}}">
+                                    <img loading="lazy" style="height: 130px"
+                                        src="{{url_for('static', filename='images/logo-cristina-santos-imoveis-header.jpeg')}}"
+                                        alt="Cristina Santos Imóveis - Logo">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 header-right">
+                                <ul class="top-info-box">
+                                    <li style="border-right:1px solid white;">
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title" style="color: white;">Agende uma visita</p>
+                                                <p class="info-box-subtitle" style="color: white;">(+55) 73-9920-7252
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="border-right: 1px solid white;">
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title" style="color: white;">Entre em contato</p>
+                                                <p class="info-box-subtitle" style="color: white;">
+                                                    contato@cristinaimoveis.com.br
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="info-box last">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title" style="color: white;">CRECI</p>
+                                                <p class="info-box-subtitle" style="color: white;">BA 24.035 F</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-get-a-quote">
+                                        <a class="btn btn-whatsapp"
+                                            href="https://api.whatsapp.com/send?phone=557399207252&text=Ol%C3%A1!!!%20Sou%20Cristina%20Santos%2C%20Corretora%20de%20Im%C3%B3veis%20%20em%20Arraial%20d%20Ajuda.%20Obrigada%20por%20me%20contactar!%20Estou%20%C3%A0%20sua%20disposi%C3%A7%C3%A3o.%20Assim%20que%20poss%C3%ADvel%20responderei%20sua%20mensagem.%20Por%20favor%20qual%20seu%20nome%3F">WhatsApp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-navigation" style="background-color: #ffb600;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div id="navbar-collapse" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a href="{{url_for('index')}}" class="nav-link"
+                                                Title="Cristina Santos Imóveis - Página inicial">Home</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="{{url_for('sobre')}}" class="nav-link"
+                                                Title="Cristina Santos Imóveis - Sobre">Cristina Santos</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="{{url_for('alugar')}}" class="nav-link"
+                                                Title="Cristina Santos Imóveis - Alugar Imóveis">Alugar</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="{{url_for('comprar')}}" class="nav-link"
+                                                Title="Cristina Santos Imóveis - Comprar Imóveis">Comprar</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="{{url_for('contato')}}"
+                                                Title="Cristina Santos Imóveis - Contato">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        {{% block content %}}
+
+        {{% endblock % }}
+
+
+        <!-- initialize jQuery Library -->
+        <script src="{{url_for('static', filename='plugins/jQuery/jquery.min.js')}}"></script>
+        <!-- Bootstrap jQuery -->
+        <script src="{{url_for('static', filename='plugins/bootstrap/bootstrap.min.js')}}" defer async></script>
+        <!-- Slick Carousel -->
+        <script src="{{url_for('static', filename='plugins/slick/slick.min.js')}}" async></script>
+        <script src="{{url_for('static', filename='plugins/slick/slick-animation.min.js')}}" async></script>
+        <!-- Color box -->
+        <script src="{{url_for('static', filename='plugins/colorbox/jquery.colorbox.min.js')}}" async></script>
+        <!-- shuffle -->
+        <script src="{{url_for('static', filename='plugins/shuffle/shuffle.min.js')}}" defer async></script>
+        <!-- Template custom -->
+        <script src="{{url_for('static', filename='js/script.min.js')}}" async></script>
+
+
+        <!-- Javascript Files
+  ================================================== -->
+
+        <footer id="footer" class="footer bg-overlay">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                            <img loading="lazy" width="200" class="footer-logo" style="max-height: none"
+                                src="{{url_for('static', filename='images/logo-cristina-santos-imoveis-footer.png')}}"
+                                alt="Cristina Santos Imóveis">
+                        </div>
+                        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                            <h3 class="widget-title">Redes Sociais</h3>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="https://web.facebook.com/cristinasantosimoveis/?_rdc=1&_rdr"
+                                            aria-label="Facebook" target="blank"
+                                            Title="Cristina Santos Imóveis - Facebook"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/channel/UCTl3YXlxWDrznd_i1XwP5Hw/featured"
+                                            aria-label="Youtube" target="blank"
+                                            Title="Cristina Santos Imóveis - Youtube"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/cristinasantosimoveis/?hl=pt-br"
+                                            aria-label="Instagram" target="blank"
+                                            Title="Cristina Santos Imóveis - Instagram"><i
+                                                class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                            <h3 class="widget-title">Imóves</h3>
+                            <ul class="list-arrow">
+                                <li><a href="{{url_for('alugar')}}"
+                                        Title="Cristina Santos Imóveis - Alugar Imóveis">Alugar</a>
+                                </li>
+                                <li><a href="{{url_for('comprar')}}"
+                                        Title="Cristina Santos Imóveis - Comprar imóveis">Comprar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="copyright-info">
+                                <span>&copy;
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script> - Cristina Santos Imóveis - Todos os direitos reservados - CRECI: BA
+                                    24.035 F
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="footer-menu text-center text-md-right">
+                                <a href="#">Desenvolvido por TMM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                        <button class="btn btn-primary" title="Back to Top">
+                            <i class="fa fa-angle-double-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer
+  ================================================== -->
+
+    </div>
+
+</body>
+
+</html>

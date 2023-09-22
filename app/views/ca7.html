@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cristina Santos Imóveis. Corretora imobiliária em Arraial d'Ajuda, Porto Seguro e Trancoso. Casas e Apartamentos para alugar e vender.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+<link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+{% include 'layouts/fbs.html' %}
+
+  <!-- Bootstrap
+================================================== -->
+
+</head>
+<body>
+  <div class="body-inner">
+
+<header id="header" class="header-one">
+
+    {% include 'layouts/header.html' %}
+
+</header>
+
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/imoveis/casa-arraial-dajuda-duplex-11.jpeg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Comprar</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{{url_for('index')}}" title="Cristina Santos Imóveis - Página inicial">Home</a></li>
+                      <li class="breadcrumb-item"><a href="{{url_for('comprar')}}" title="Cristina Santos Imóveis - Comprar Imóveis">Comprar</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Casa</li>
+                    </ol>
+                </nav>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div id="page-slider" class="page-slider small-bg">
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-1.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-2.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-3.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-4.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-5.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-6.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-7.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-8.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-9.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-10.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-11.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-12.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, duplex" />
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <h3 class="column-title mrt-0">Casa</h3>
+        <p>Casa duplex, privativa, recém terminada, charme e bom gosto define esse imóvel que dispõem de espaços amplos e extremamente clean.</p>
+        <ul class="project-info list-unstyled">
+          <li>
+            <p class="project-info-label"><i class="fas fa-money-bill"></i>   Valor</p>
+            <p class="project-info-content">R$300.000,00</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-home"></i>   Tipo de imóvel</p>
+            <p class="project-info-content">Residencial</p>
+          </li>
+          <!-- <li>
+            <p class="project-info-label"><i class="fas fa-th"></i>   Área utíl</p>
+            <p class="project-info-content">50m&sup2;</p>
+          </li> -->
+          <li>
+            <p class="project-info-label"><i class="fas fa-bed"></i>   Quantidade de quartos</p>
+            <p class="project-info-content">04 quartos</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-shower"></i>   Quantidade de banheiros</p>
+            <p class="project-info-content">01 banheiro</p>
+          </li>
+          <!-- <li>
+            <p class="project-info-label"><i class="fas fa-car"></i>   Estacionamento</p>
+            <p class="project-info-content">03 vagas</p>
+          </li> -->
+          <li>
+            <p class="project-info-label"><i class="fas fa-map-marker-alt"></i>   Localização</p>
+            <p class="project-info-content">Arraial d'Ajuda - BA</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-list-ul"></i>   Descrição</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Sala</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Sala de TV</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Cozinha</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> 02 quartos com sacada, sendo uma suíte</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Imóvel todo forrado em gesso (exceto em suas depedências externas)</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Piso de qualidade assim como toda estrutura muito bem acabada com excelentes materiais</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> A casa possui um reservatório de água embutido em sua área externa</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Possui espaço para uma futura churrasqueira o qual o novo proprietário pode dar seguimento</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> O imóvel dispõe de recibo de compra e venda, podendo ser feita escritura de posse</p>
+          </li>
+          <li>
+            <p class="project-link">
+              <a class="btn btn-primary" href="{{url_for('comprar')}}" title="Cristina Santos Imóveis - Comprar Imóveis">Voltar</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  {% include 'layouts/fjs.html' %}
+
+<!-- Javascript Files
+  ================================================== -->
+
+
+  {% include 'layouts/footer.html' %}
+
+  <!-- Footer
+  ================================================== -->
+
+  </body>
+
+  </html>

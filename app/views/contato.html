@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cristina Santos Imóveis. Corretora imobiliária em Arraial d'Ajuda, Porto Seguro e Trancoso. Casas e Apartamentos para alugar e vender.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+<link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+{% include 'layouts/fbs.html' %}
+
+  <!-- Bootstrap
+================================================== -->  
+
+</head>
+<body>
+  <div class="body-inner">
+
+<header id="header" class="header-one">
+ 
+  {% include 'layouts/header.html'%}
+
+</header>
+
+<div id="banner-area" class="banner-area" style="background-image:url(static/images/banner/cristina-santos-imoveis-contato.jpeg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Entre em contato</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{{url_for('index')}}" title="Página inicial">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Contato</li>
+                    </ol>
+                </nav>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-12">
+        
+        <h3 class="section-sub-title">Canais de contato</h3>
+      </div>
+    </div>
+  
+
+    <div class="row">
+     
+
+      <div class="col-md-6">
+        <div class="ts-service-box-bg text-center h-100">
+          <span class="ts-service-icon icon-round">
+            <i class="fa fa-envelope mr-0"></i>
+          </span>
+          <div class="ts-service-box-content">
+            <h4>E-mail</h4>
+            <p>contato@cristinaimoveis.com.br</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ts-service-box-bg text-center h-100">
+          <span class="ts-service-icon icon-round">
+            <i class="fa fa-phone-square mr-0"></i>
+          </span>
+          <div class="ts-service-box-content">
+            <h4>Telefone</h4>
+            <p>(+55) 73-9920-7252</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gap-60"></div>
+
+    <div class="google-map">
+      
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Arraial%20d'Ajuda&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">html google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+    </div>
+
+    <div class="gap-40"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="column-title">Entre em contato</h3>
+        <!-- contact form works with formspree.io  -->
+        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+
+        {% block content %}
+
+        <form id="contact-form" action="{{url_for('contato')}}" method="post" role="form">
+          {{ form.csrf_token }}
+
+          <div class="error-container"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>{{ form.name.label }}</label>
+                {{ form.name(class_='form-control form-control-name', id='name', required='required') }}
+                <!-- <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text" required> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>{{ form.email.label }}</label>
+                {{ form.email(class_='form-control form-control-email', id='email', required='required') }}
+                <!-- <input class="form-control form-control-email" name="email" id="email" placeholder="" type="email"
+                  required> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>{{ form.subject.label }}</label>
+                {{ form.subject(class_='form-control form-control-subject', id='subject', required='required') }}
+                <!-- <input class="form-control form-control-subject" name="subject" id="subject" placeholder="" required> -->
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>{{ form.message.label }}</label>
+            {{ form.message(class_='form-control form-control-message', id='message', required='required',rows='10',) }}
+            <!-- <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
+              required></textarea> -->
+          </div>
+          <div class="text-right"><br>
+            <button class="btn btn-primary solid blank" type="submit">Enviar</button>
+          </div>
+        </form>
+
+        {% endblock %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  {% include 'layouts/fjs.html' %}
+
+  <!-- Javascript Files
+  ================================================== -->
+
+
+  {% include 'layouts/footer.html' %}
+
+    <!-- Footer
+  ================================================== -->
+
+  </body>
+
+  </html>

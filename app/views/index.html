@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cristina Santos Imóveis. Corretora imobiliária em Arraial d'Ajuda, Porto Seguro e Trancoso. Casas e Apartamentos para alugar e vender.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+  <link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+  
+  {% include 'layouts/fbs.html'%}
+
+  <!-- Bootstrap
+================================================== -->
+</head>
+<body>
+  <div class="body-inner">
+
+  <header id="header" class="header-one">
+  
+  {% include 'layouts/header.html' %}
+ 
+  </header>
+
+
+  <div class="banner-carousel banner-carousel-1 mb-0">
+  <div class="banner-carousel-item" style="background-image:url(static/images/banner/cristina-santos-imoveis-comprar.jpeg);" aria-hidden="true">
+    <div class="slider-content text-right">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="col-md-12">
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">Comprar Imóveis</h3>
+                <p data-animation-in="slideInLeft">
+                    <a href="{{url_for('comprar')}}" class="slider btn btn-primary">Saiba mais</a>
+                   
+                </p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="banner-carousel-item" style="background-image:url(static/images/banner/cristina-santos-imoveis-alugar.jpeg)" aria-hidden="true">
+    <div class="slider-content text-left">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="col-md-12">
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">Alugar Imóveis</h3>
+                <p data-animation-in="slideInRight">
+                    <a href="{{url_for('alugar')}}" class="slider btn btn-primary">Saiba mais</a>
+                </p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<section class="call-to-action-box no-padding">
+  <div class="container">
+    <div class="action-style-box">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-left">
+              <div class="call-to-action-text">
+                <h3 class="action-title" style="font-size: 18pt;">Entre em contato e agende uma visita</h3>
+              </div>
+          </div><!-- Col end -->
+          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+              <div class="call-to-action-btn">
+                <a class="btn btn-dark" href="{{url_for('contato')}}">Entre em contato</a>
+              </div>
+          </div><!-- col end -->
+        </div><!-- row end -->
+    </div><!-- Action style box -->
+  </div><!-- Container end -->
+</section>
+
+<section id="news" class="news">
+  <div class="container">
+    <div class="row text-center">
+        <div class="col-12">
+          
+          <h3 class="section-sub-title">Imóveis recentes</h3>
+        </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/apartamento-arraial-dajuda-centro-4.jpeg')}}" alt="cristina-santos-imoveis-alugar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento2')}}">Alugar - Apartamento</a></h3>
+                  <p>R$1.700,00 | 01 Dorm. | 01 Banheiro</p>
+                  <p>Alugar apartamento bem pertinho da rua mais charmosa de Arraial, a rua Mucugê.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento2')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/flats-arraial-dajuda-praia-pescador-1.jpeg')}}" alt="cristina-santos-imoveis-alugar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('flat1')}}">Alugar - Flat</a></h3>
+                  <p>Valor a confirmar | 03 Dorm. | 01 Banheiro</p>
+                  <p>Para alugar na temporada Flats, pertinho da praia do pescador, próximo ao Eco Park, 800 metros do centro de Arraial d'Ajuda.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('flat1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/suites-arraial-dajuda-7.jpeg')}}" alt="cristina-santos-imoveis-alugar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento1')}}">Alugar - Apartamento</a></h3>
+                  <p>Valor a confirmar | 03 Dorm. | 01 Banheiro</p>
+                  <p>Ter o privilégio de estar hospedado em uma mega casa, em um dos lugares mais lindo do Brasil.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-11.jpeg')}}" alt="cristina-santos-imoveis-comprar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa7')}}">Comprar - Casa</a></h3>
+                  <p>R$300.000,00 | 04 Dorm. | 01 Banheiro</p>
+                  <p>Casa duplex, privativa, recém terminada, charme e bom gosto.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa7')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-14.jpg')}}" alt="cristina-santos-imoveis-comprar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa2')}}">Comprar - Casa</a></h3>
+                  <p>R$2.000.000,00 | 04 Dorm. | 02 Banheiros</p>
+                  <p>Belissíma casa para comprar.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa2')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/apartamento-arraial-dajuda-proximo-ao-centro-27.jpeg')}}" alt="cristina-santos-imoveis-comprar">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento1')}}">Comprar - Apartamento</a></h3>
+                  <p>Valor a consultar | 03 Dorm. | 01 Banheiro</p>
+                  <p>Apartamento para comprar, excelente oportunidade tanto para moradia como para locação de temporada ou anual.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div>
+        
+    </div>
+    <!--/ Content row end -->
+
+  </div>
+  <!--/ Container end -->
+</section>
+
+<section class="subscribe no-padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="subscribe-call-to-acton">
+              <h3>Agende uma visita</h3>
+              <h4>(+55) 73-9920-7252</h4>
+          </div>
+        </div><!-- Col end -->
+        <div class="col-lg-8">
+          <div class="ts-newsletter row align-items-center">
+              <div class="col-md-5 newsletter-introtext">
+              </div>
+          </div><!-- Newsletter end -->
+        </div><!-- Col end -->
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<section id="project-area" class="project-area solid-bg">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <h3 class="section-sub-title">Imóvel em destaque</h3>
+      </div>
+    </div>
+    <!--/ Title row end -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row shuffle-wrapper">
+          <div class="col-1 shuffle-sizer"></div>
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-1.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-1.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 1 end -->
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-2.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-2.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 2 end -->
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-3.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-3.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 3 end -->
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-8.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-8.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 4 end -->
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-6.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-6.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 5 end -->
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-7.jpg')}}" aria-label="project-img">
+                <img class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-7.jpg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Alto da Pitinga">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+            </div>
+          </div><!-- shuffle item 6 end -->
+        </div><!-- shuffle end -->
+      </div>
+      <div class="col-12">
+        <div class="general-btn text-center">
+          <a class="btn btn-primary" href="{{url_for('casa2')}}">Saiba mais</a>
+        </div>
+      </div>
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+
+  {% include 'layouts/fjs.html' %}
+
+  <!-- Javascript Files
+  ================================================== -->
+  
+  {% include 'layouts/footer.html' %}
+
+   <!-- Footer
+  ================================================== -->
+
+  </body>
+
+  </html>

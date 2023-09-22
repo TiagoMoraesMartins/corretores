@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+  <link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+  <!-- CSS
+================================================== -->
+  
+{% include 'layouts/fbs.html' %}
+
+</head>
+<body>
+  <div class="body-inner">
+   
+<header id="header" class="header-one">
+  
+  {% include 'layouts/header.html'%}
+
+</header>
+<!--/ Header end -->
+<div id="banner-area" class="banner-area" style="background-image:url(static/images/banner/cristina-santos-imoveis-alugar.jpeg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Imóveis para Alugar</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Alugar</li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end --> 
+
+<section id="main-container" class="main-container pb-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/apartamento-arraial-santiago-2.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento3')}}">Apartamento</a></h3>
+                  <p>R$900,00 | 02 Dorm. | 01 Banheiro</p>
+                  <p>Alugar apartamento novo.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento3')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/apartamento-arraial-dajuda-centro-4.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento2')}}">Apartamento</a></h3>
+                  <p>R$1.700,00 | 01 Dorm. | 01 Banheiro</p>
+                  <p>Alugar apartamento bem pertinho da rua mais charmosa de Arraial, a rua Mucugê.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento2')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-mucuge-4.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa6')}}">Casa</a></h3>
+                  <p>R$2.400,00 | 01 Dorm. | 01 Banheiro</p>
+                  <p>Aluga casa mobiliada pertinho da rua Mucugê, ideal para quem deseja fazer tudo sem precisar de carro.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa6')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-temporada-1.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa5')}}">Casa</a></h3>
+                  <p>Valor a confirmar | 05 Dorm. | 01 Banheiro</p>
+                  <p>Aluga casa para temporada, bem pertinho da praia, 500m do Eco Parque, 800m do centro, 10 minutos de carro até a rua mais charmosa de Arraial, rua Mucugê.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa5')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+  
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/flats-arraial-dajuda-praia-pescador-1.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('flat1')}}">Flat</a></h3>
+                  <p>Valor a confirmar| 03 Dorm. | 01 Banheiro</p>
+                  <p>Para alugar na temporada Flats, pertinho da praia do pescador, próximo ao Eco Park, 800 metros do centro de Arraial d'Ajuda.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('flat1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/suites-arraial-dajuda-7.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('suite1')}}">Suítes</a></h3>
+                  <p>Valor a confirmar | 05 Dorm. | 01 Banheiro</p>
+                  <p>Ter o privilégio de estar hospedado em uma mega casa, em um dos lugares mais lindo do Brasil. Bairro residencial e bem tranquilo.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('suite1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+    </div><!-- Main row end -->
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+  <!-- Javascript Files
+  ================================================== -->
+  {% include 'layouts/fjs.html' %}
+
+  {% include 'layouts/footer.html' %}
+
+  </body>
+
+  </html>

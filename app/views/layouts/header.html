@@ -1,0 +1,94 @@
+<div style="background-color: black;">
+  <style>
+    .btn-whatsapp {
+      background-color:#27a644;
+      color: white;
+      font-size: 18pt;
+    }
+    .btn-whatsapp:hover{
+      background-color:#27a644;
+      color:black;
+    }
+    ul.navbar-nav>li>a:hover{
+      color: black !important
+    }
+    </style>
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{{url_for('index')}}">
+                  <img loading="lazy" style="height: 130px" src="{{url_for('static', filename='images/logo-cristina-santos-imoveis-header.jpeg')}}" alt="Cristina Santos Imóveis - Logo">
+                </a>
+            </div>
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                  <li style="border-right:1px solid white;"> 
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title" style="color: white;">Agende uma visita</p>
+                          <p class="info-box-subtitle" style="color: white;">(+55) 73-9920-7252</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="border-right: 1px solid white;">
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title" style="color: white;">Entre em contato</p>
+                          <p class="info-box-subtitle" style="color: white;">contato@cristinaimoveis.com.br</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last">
+                    <div class="info-box last">
+                      <div class="info-box-content">
+                          <p class="info-box-title" style="color: white;">CRECI</p>
+                          <p class="info-box-subtitle" style="color: white;">BA 24.035 F</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-get-a-quote">
+                    <a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=557399207252&text=Ol%C3%A1!!!%20Sou%20Cristina%20Santos%2C%20Corretora%20de%20Im%C3%B3veis%20%20em%20Arraial%20d%20Ajuda.%20Obrigada%20por%20me%20contactar!%20Estou%20%C3%A0%20sua%20disposi%C3%A7%C3%A3o.%20Assim%20que%20poss%C3%ADvel%20responderei%20sua%20mensagem.%20Por%20favor%20qual%20seu%20nome%3F">WhatsApp</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-navigation" style="background-color: #ffb600;">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li class="nav-item">
+                          <a href="{{url_for('index')}}" class="nav-link" Title="Cristina Santos Imóveis - Página inicial">Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a href="{{url_for('sobre')}}" class="nav-link" Title="Cristina Santos Imóveis - Sobre">Cristina Santos</a>
+                      </li>
+              
+                      <li class="nav-item">
+                          <a href="{{url_for('alugar')}}" class="nav-link" Title="Cristina Santos Imóveis - Alugar Imóveis">Alugar</a>
+                      </li>
+              
+                      <li class="nav-item">
+                          <a href="{{url_for('comprar')}}" class="nav-link" Title="Cristina Santos Imóveis - Comprar Imóveis">Comprar</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="{{url_for('contato')}}" Title="Cristina Santos Imóveis - Contato">Contato</a></li>
+                    </ul>
+                </div>
+              </nav>
+          </div>  
+        </div>
+    </div>
+  </div>
+ 

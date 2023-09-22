@@ -1,0 +1,56 @@
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 col-md-6 footer-widget footer-about">
+            <img loading="lazy"  width="200" class="footer-logo" style="max-height: none" src="{{url_for('static', filename='images/logo-cristina-santos-imoveis-footer.png')}}" alt="Cristina Santos Imóveis">
+          </div>
+          <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+            <h3 class="widget-title">Redes Sociais</h3>
+            <div class="footer-social">
+              <ul>
+                <li><a href="https://web.facebook.com/cristinasantosimoveis/?_rdc=1&_rdr" aria-label="Facebook" target="blank" Title="Cristina Santos Imóveis - Facebook"><i
+                      class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCTl3YXlxWDrznd_i1XwP5Hw/featured" aria-label="Youtube" target="blank" Title="Cristina Santos Imóveis - Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/cristinasantosimoveis/?hl=pt-br" aria-label="Instagram" target="blank" Title="Cristina Santos Imóveis - Instagram"><i
+                      class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+            <h3 class="widget-title">Imóves</h3>
+            <ul class="list-arrow">
+              <li><a href="{{url_for('alugar')}}" Title="Cristina Santos Imóveis - Alugar Imóveis" >Alugar</a></li>
+              <li><a href="{{url_for('comprar')}}" Title="Cristina Santos Imóveis - Comprar imóveis">Comprar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+              <span>&copy;
+                 <script>
+                  document.write(new Date().getFullYear())
+                </script> - Cristina Santos Imóveis - Todos os direitos reservados - CRECI: BA 24.035 F</span>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="footer-menu text-center text-md-right">
+              <a href="#">Desenvolvido por TMM</a>
+            </div>
+          </div>
+        </div>
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+</footer>

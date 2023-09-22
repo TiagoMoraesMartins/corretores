@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin*
+Disallow: /layouts*
+
+Disallow: /static/
+Allow: /static/images/
+
+Sitemap: http://www.cristinasantosimoveis.com/sitemap.xml
+Sitemap: http://cristinasantosimoveis.com/sitemap.xml
+Sitemap: https://www.cristinasantosimoveis.com/sitemap.xml
+Sitemap: https://cristinasantosimoveis.com/sitemap.xml

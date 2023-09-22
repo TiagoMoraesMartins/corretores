@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+<link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+  <!-- CSS
+================================================== -->
+  
+{% include 'layouts/fbs.html' %}
+
+</head>
+<body>
+  <div class="body-inner">
+   
+<header id="header" class="header-one">
+  
+  {% include 'layouts/header.html'%}
+
+</header>
+<!--/ Header end -->
+<div id="banner-area" class="banner-area" style="background-image:url(static/images/banner/cristina-santos-imoveis-comprar.jpeg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Imóveis para Comprar</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Comprar</li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end --> 
+
+<section id="main-container" class="main-container pb-2">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-mangabeira-16.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa3')}}">Casa</a></h3>
+                  <p>R$240.000,00 | 01 Dorm. | 01 Banheiro</p>
+                  <p>Vende uma charmosa casa em estilo rústico, o bairro bem localizado e arborizado.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa3')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-duplex-11.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa7')}}">Casa</a></h3>
+                  <p>R$300.000,00 | 04 Dorm. | 01 Banheiro</p>
+                  <p>Casa duplex, privativa, recém terminada, charme e bom gosto define esse imóvel que dispõem de espaços amplos e extremamente clean.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa7')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/terreno-caraiva-2.jpg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('terreno1')}}">Terreno</a></h3>
+                  <p>R$400.000,00</p>
+                  <p>Já pensou em ter uma casa de praia em Caraíva - Comprar terreno?</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('terreno1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+     
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-villas-do-arraial-9.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa1')}}">Casa</a></h3>
+                  <p>R$400.000,00 | 03 Dorm. | 02 Banheiros</p>
+                  <p>Casa privativa para comprar, em um bairro residencial e bem tranquilo.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      
+     
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-corais-1.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa4')}}">Casa</a></h3>
+                  <p>R$850.000,00 | 03 Dorm. | 01 Banheiro</p>
+                  <p>Linda casa à venda, bairro residencial e bem tranquilo.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa4')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+    
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-centro-duplex-28.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa8')}}">Casa</a></h3>
+                  <p>R$1.500.000,00 | 05 Dorm. | 01 Banheiro</p>
+                  <p>Vende belíssima casa duplex, próximo ao centro de Arraial d'Ajuda, toda mobiliada, privativa, bairro tranquilo e arborizado.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa8')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-alto-da-pitinga-14.jpg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('casa2')}}">Casa</a></h3>
+                  <p>R$2.000.000,00 | 04 Dorm. | 02 Banheiros</p>
+                  <p>Belissíma casa para comprar.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('casa2')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{{url_for('static', filename='images/imoveis/apartamento-arraial-dajuda-proximo-ao-centro-27.jpeg')}}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{{url_for('apartamento1')}}">Apartamento</a></h3>
+                  <p>Valor a consultar | 03 Dorm. | 01 Banheiro</p>
+                  <p>Apartamento para comprar, excelente oportunidade tanto para moradia como para locação de temporada ou anual.</p>
+                  <a class="learn-more d-inline-block" href="{{url_for('apartamento1')}}" aria-label="service-details"><i class="fa fa-caret-right"></i> Saiba mais</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+     
+    </div><!-- Main row end -->
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+  <!-- Javascript Files
+  ================================================== -->
+  {% include 'layouts/fjs.html' %}
+
+  {% include 'layouts/footer.html' %}
+
+  </body>
+
+  </html>

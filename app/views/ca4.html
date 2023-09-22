@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>Cristina Santos Imóveis</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cristina Santos Imóveis. Corretora imobiliária em Arraial d'Ajuda, Porto Seguro e Trancoso. Casas e Apartamentos para alugar e vender.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="geo.region" content="BR-BA" /> 
+  <meta name="geo.placename" content="Porto Seguro" /> 
+  <meta name="geo.position" content="-16.491152;-39.073305" /> 
+  <meta name="ICBM" content="-16.491152, -39.073305" />
+
+  <!-- Favicon
+================================================== -->
+<link rel="shortcut icon" type="image/x-icon"  href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+
+{% include 'layouts/fbs.html' %}
+
+  <!-- Bootstrap
+================================================== -->
+
+</head>
+<body>
+  <div class="body-inner">
+
+<header id="header" class="header-one">
+
+    {% include 'layouts/header.html' %}
+
+</header>
+
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/imoveis/casa-arraial-dajuda-corais-1.jpeg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Comprar</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{{url_for('index')}}" title="Cristina Santos Imóveis - Página inicial">Home</a></li>
+                      <li class="breadcrumb-item"><a href="{{url_for('comprar')}}" title="Cristina Santos Imóveis - Comprar Imóveis">Comprar</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Casa</li>
+                    </ol>
+                </nav>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div id="page-slider" class="page-slider small-bg">
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-corais-3.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Mangabeira" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-corais-2.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Mangabeira" />
+          </div>
+          <div class="item">
+            <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/imoveis/casa-arraial-dajuda-corais-1.jpeg')}}" alt="Cristina Santos Imóveis - Casa Arraial d'Ajuda, Mangabeira" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mt-5 mt-lg-0">
+
+        <h3 class="column-title mrt-0">Casa</h3>
+        <p>Linda casa à venda, bairro residencial e bem tranquilo.</p>
+
+        <ul class="project-info list-unstyled">
+          <li>
+            <p class="project-info-label"><i class="fas fa-money-bill"></i>   Valor</p>
+            <p class="project-info-content">R$850.000,00</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-home"></i>   Tipo de imóvel</p>
+            <p class="project-info-content">Residencial</p>
+          </li>
+          <!-- <li>
+            <p class="project-info-label"><i class="fas fa-th"></i>   Área utíl</p>
+            <p class="project-info-content">50m&sup2;</p>
+          </li> -->
+          <li>
+            <p class="project-info-label"><i class="fas fa-bed"></i>   Quantidade de quartos</p>
+            <p class="project-info-content">03 quartos</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-shower"></i>   Quantidade de banheiros</p>
+            <p class="project-info-content">01 banheiro</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-car"></i>   Estacionamento</p>
+            <p class="project-info-content">03 vagas</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-map-marker-alt"></i>   Localização</p>
+            <p class="project-info-content">Arraial d'Ajuda - BA, Corais</p>
+          </li>
+          <li>
+            <p class="project-info-label"><i class="fas fa-list-ul"></i>   Descrição</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> 03 suítes e 01 lavabo</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Sala com cozinha em conceito aberto</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Fino acabamento em porcelanato, cerâmica retificada</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Esquadrias em alumínio e madeira</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Laje e telhado colonial com telhas americanas brancas</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Área de serviço, bancadas em granito</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Piscina, deck em tatajuba</p>
+            <p class="project-info-content"><i class="fa fa-caret-right"></i> Interfone e portão automático</p>
+          </li>
+          <li>
+            <p class="project-link">
+              <a class="btn btn-primary" href="{{url_for('comprar')}}" title="Cristina Santos Imóveis - Comprar Imóveis">Voltar</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  {% include 'layouts/fjs.html' %}
+
+<!-- Javascript Files
+  ================================================== -->
+
+
+  {% include 'layouts/footer.html' %}
+
+  <!-- Footer
+  ================================================== -->
+
+  </body>
+
+  </html>
